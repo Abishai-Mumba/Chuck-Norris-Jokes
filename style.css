@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: #e2f3f5;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #482ff7;
+    font-family: 'Bungee Outline', cursive;
+    line-height: 1.5em;
+}
+
+.filter {
+    min-width: 300px;
+    padding: 0 2em;
+}
+.filter p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #39299c;
+}
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    margin: .5em;
+    padding: .5em 1em;
+    background: #9c1de7;
+    color: white;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.clicked {
+    background: #2cb978;
+}
+.refresh {
+    background: #482ff7;
+    font-weight: bold;
+}
+.refresh:hover {
+    background: none;
+    border: 2px solid #482ff7;
+    color: #482ff7;
+    padding: .35em .6em;
+}
+
+.card {
+    min-width: 250px;
+    max-width: 400px;
+    min-height: 250px;
+    border-radius: 1em;
+    padding: 2em 1em;
+    margin: 10px;
+    position: relative;
+}
+.card img {
+    position: absolute;
+    top: -1em;
+    left: 42%;
+}
+.card img:hover {
+    animation: wiggle .3s 3 linear alternate;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.jokes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1em;
+}
+.jokes p {
+    color: #482ff7;
+    margin-top: 2em;
+}
+
+/* content loader icon */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1.5s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
